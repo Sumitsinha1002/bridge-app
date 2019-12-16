@@ -1,0 +1,32 @@
+<div class="container mat-elevation-z8 wrapper">
+    <h1 class="table-header">List of Devices</h1>
+    <mat-table #table [dataSource]="dataSource">
+      <ng-container matColumnDef="number">
+        <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+        <mat-cell *matCellDef="let battery"> {{battery.index}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="batteryId">
+        <mat-header-cell *matHeaderCellDef> Device Id </mat-header-cell>
+        <mat-cell *matCellDef="let battery"> {{battery.batteryId}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="academyId">
+        <mat-header-cell *matHeaderCellDef> Academy Id </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.academyId}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="health">
+        <mat-header-cell *matHeaderCellDef>Battery Health </mat-header-cell>
+        <mat-cell *matCellDef="let battery">
+            <div class="{{battery.health}} health-div"></div> </mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  
+    <mat-paginator #paginator
+                   [pageSize]="10"
+                   [pageSizeOptions]="[5, 10, 20]"
+                   [showFirstLastButtons]="true">
+    </mat-paginator>
+  </div>

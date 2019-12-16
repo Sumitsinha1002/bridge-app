@@ -1,0 +1,27 @@
+.header{
+    background-color: #fff;
+    z-index: 4;
+    border-top: 4px solid #8cc63e;
+    transition: all .5s ease-in-out;
+    width:100%;
+    box-shadow: 0 3px 20px 0 rgba(21,28,19,0.1);
+    height: 12%;
+}
+.top-bar-left{
+    float: left;
+    padding: 16px 16px;
+    width:8%;
+}
+figure{
+    margin:0;
+}
+.sticky_header_with_image{
+    width:100%;
+}
+.mat-tab-label-container{
+    width: 40%;
+    margin: 0 auto;
+}
+.mat-tab-header{
+    border: none;
+}

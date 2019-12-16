@@ -1,0 +1,17 @@
+
+
+  <div>
+    <div class="wrapper mat-elevation-z8">
+      <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="mbarChartLabels"
+              [options]="barChartOptions"
+              [colors]="chartColors"
+              (chartHover)="chartHovered($event)"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"
+              (chartClick)="chartClicked($event)"></canvas>
+    </div>
+  
+  
+  </div>

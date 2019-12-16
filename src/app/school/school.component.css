@@ -1,0 +1,14 @@
+.wrapper{
+    width:60%;
+    display:block;
+    overflow:hidden;
+    margin:10px auto;
+    padding: 60px 50px;
+    background:#fff;
+    border-radius:4px;
+  }
+  @media screen and (max-width: 960px) {
+    .wrapper {
+      width:80%
+    }
+  }

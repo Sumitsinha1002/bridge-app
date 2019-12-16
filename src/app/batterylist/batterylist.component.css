@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 550px;
+  }
+  .wrapper {
+  width: 60%;
+  display: block;
+  overflow: hidden;
+  margin: 12px auto;
+  padding: 30px 50px;
+  background: #fff;
+  border-radius: 4px;
+}
+.health-div{
+    width:100px;
+    height:20px;
+}
+.red{
+    background:#e04a4a;
+}
+.yellow{
+    background: #e2f067;
+}
+.green{
+    background: #498750;
+}
+.table-header{
+    text-align: center;
+    color: #8cc63e;
+}
+@media screen and (max-width: 960px) {
+    .wrapper {
+      width:80%
+    }
+  }
